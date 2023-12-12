@@ -2,6 +2,7 @@ import {useRef, useState, useEffect} from 'react';
 import {Link} from 'react-router-dom';
 import axios from 'axios';
 import { ToastContainer, toast } from 'react-toastify';
+import { login } from '../../api/api';
 import balcony from '../../assets/balcony.jpg';
 import eyeIcon from '../../assets/eyeIcon.svg';
 import eyeIconVisib from '../../assets/eyeIconVisib.svg';
@@ -33,13 +34,13 @@ function Login() {
         e.preventDefault();
         console.log(user, pwd);
         try{
-            const response = await axios.post( 
-                JSON.stringify({'username': user, 'password': pwd}),
-                {
-                    header: {'Content-Type': 'application/json'},
-                    withCredentials: true
-                }
-            );
+            const data ={
+                email:user,
+                password:pwd
+            }
+            const response = await login(data)
+           
+            
             console.log(JSON.stringify(response?.data));
             const accessToken = response?.data?.accessToken;
             const roles = response?.data?.roles;

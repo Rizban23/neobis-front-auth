@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const URL = '';
+const URL = 'http://68.183.72.178/';
 
 const instance = axios.create({
     baseURL: URL,
@@ -10,11 +10,12 @@ const instance = axios.create({
 });
 
 export const login = async (data) =>{
-    const res = await instance.post('login', data)
+    const res = await instance.post('api/v1/dj-rest-auth/login/', data)
     return res.data
 }
 
 export const register = async (data) =>{
-    const res = await instance.post('register', data)
+    console.log(data)
+    const res = await instance.post('api/v1/dj-rest-auth/registration/', data)
     return res.data
 }

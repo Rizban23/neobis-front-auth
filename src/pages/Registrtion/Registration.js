@@ -24,8 +24,16 @@ function Registration() {
     let navigate = useNavigate();
 
     const onSubmit = async () => {
+        console.log(userInfo)
+        const data = {
+            email:userInfo.email,
+            username:userInfo.username,
+            password1:userInfo.password,
+            password2:userInfo.confirmPassword 
+        }
         try{
-            const response = await register(userInfo)
+            const response = await register(data)
+            console.log(response)
             navigate('/registercompleted');
         }
         catch(err){
