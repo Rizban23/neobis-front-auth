@@ -1,0 +1,17 @@
+.background-wrapper{
+    display: none;
+}
+
+@media (min-width: 1024px) {
+    .background-wrapper{
+        display: block;
+    }
+    .wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 800px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
