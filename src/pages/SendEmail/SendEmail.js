@@ -7,7 +7,7 @@ function SendEmail(){
     return (
         <div className="wrapper">
             <Bg/>
-            <div className="container fl-col-ai-cen ">
+            <div className="container flex ">
                 <Main/>
                 <h2 className='registr-title'>
                     Выслали письмо со ссылкой для завершения регистрации на example@gmail.com

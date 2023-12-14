@@ -171,19 +171,19 @@ function Registration() {
                     </ul> 
                     ) : (
                     <ul> 
-                        <li className={isMaxMinLength ? 'red' : 'green'}>
+                        <li className={isMaxMinLength ? 'green' : 'red'}>
                             От 8 до 15 символов 
 
                         </li>
-                        <li className={isLetter ? 'red': 'green'} >
+                        <li className={isLetter ? 'green': 'red'} >
                             Строчные и прописные буквы
                            
                         </li>
-                        <li className={isNumber ? 'red' :'green'}>
+                        <li className={isNumber ? 'green' :'red'}>
                             Минимум 1 цифра
                            
                         </li>
-                        <li className={isSpecialSymbol ? 'red' : 'green'}>
+                        <li className={isSpecialSymbol ? 'green' : 'red'}>
                             Минимум 1 спецсимвол (!, ", #, $...)
                         </li>
                     </ul> 
