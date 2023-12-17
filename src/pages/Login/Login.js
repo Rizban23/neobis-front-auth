@@ -1,6 +1,8 @@
 import {useRef, useState, useEffect} from 'react';
 import {Link} from 'react-router-dom';
 import axios from 'axios';
+import {selectUsername} from '../../redux/loginSlice'
+import {loginUser} from '../../redux/loginSlice'
 import { ToastContainer, toast } from 'react-toastify';
 import { login } from '../../api/api';
 import balcony from '../../assets/balcony.jpg';
@@ -9,19 +11,23 @@ import eyeIconVisib from '../../assets/eyeIconVisib.svg';
 import Bg from '../../components/Bg/Bg';
 import './Login.css'
 import 'react-toastify/dist/ReactToastify.css';
+import { useDispatch, useSelector } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
 
 
-function Login() {    
+function Login() {   
+    let navigate = useNavigate(); 
     const userRef = useRef();
     const errRef = useRef();
-
+    const dispatch = useDispatch();
+    const login = useSelector(selectUsername);
     const [user, setUser] = useState('');
     const [pwd, setPwd] = useState('');
     const [error, setError] = useState(false);
     const [success, setSuccess] = useState(false);
 
     const [passwordVisible, setPasswordVisible] = useState(false);
-
+     console.log(login)
     useEffect(() =>{
         userRef.current.focus();
     }, []);
@@ -38,6 +44,8 @@ function Login() {
                 email:user,
                 password:pwd
             }
+          dispatch (loginUser(user));
+          navigate ('/home');
             const response = await login(data)
            
             

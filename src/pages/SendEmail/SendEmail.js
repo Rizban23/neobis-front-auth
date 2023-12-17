@@ -18,7 +18,7 @@ function SendEmail(){
                 <div className='divider'>
                 (´｡• ω •｡`)
                 </div>
-                <Link className='loginBtn mt25px' to={'/login'}>Войти</Link>
+                <Link className='loginBtn mt25px' to={'/'}>Войти</Link>
             </div>
         </div>
     )
