@@ -12,7 +12,7 @@ function Signin() {
     <div className="wrapper">
       {modal && <Modal setModal={setModal} />}
       <div className='container flex justify'>
-        <h2>С возвращением!</h2>
+      <h2>С возвращением!</h2>
         <h3>{login} - твой личный репетитор</h3>
         <img className='welcomeImg' src={balcony} alt="" />
         <button className='white-btn btnExit mb25' onClick={() => setModal(true)}>Выйти</button>
