@@ -8,4 +8,4 @@
 
 > 1. Войти (если уже есть аккаунт):
 Заполните поле логин и пароль, и нажмите войти.
-![screenshot](../my-app/src/assets/screen1.png)
+![screenshot](https://github.com/../my-app/src/assets/screen1.png)
