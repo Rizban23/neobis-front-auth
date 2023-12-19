@@ -6,6 +6,12 @@
 
 ### Использование
 
-> 1. Войти (если уже есть аккаунт):
-Заполните поле логин и пароль, и нажмите войти.
-![screenshot](https://github.com/../my-app/src/assets/screen1.png)
+> 1. Войти
+Заполните поле логин и пароль, и нажмите войти
+> 2. Если нет аккаунта то должны зарегистрироваться.
+> 3. После подтверждения почты можете войти в приложения
+
+### Team
+Frontend: https://github.com/Rizban23
+Backend Python: https://github.com/Akhambay;
+IOS: https://github.com/KryaKa57
