@@ -11,6 +11,6 @@
 > 3. После подтверждения почты можете войти в приложения
 
 ### Teams
-Frontend: https://github.com/Rizban23
-Backend Python: https://github.com/Akhambay;
-IOS: https://github.com/KryaKa57
+1. Frontend: https://github.com/Rizban23
+2. Backend Python: https://github.com/Akhambay;
+3. IOS: https://github.com/KryaKa57
